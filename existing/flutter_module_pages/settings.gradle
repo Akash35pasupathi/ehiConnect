@@ -1,0 +1,16 @@
+
+rootProject.name='existing'
+include ':app' // assumed existing content
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'my_flutter/.android/include_flutter.groovy'
+))
+
+
+/*
+// Generated file. Do not edit.
+include ':.android'
+
+
+*/
